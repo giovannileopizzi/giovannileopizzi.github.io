@@ -1,3 +1,5 @@
+theme: minima
+
 <!--
   <<< Author notes: Step 2 >>>
   Start this step by acknowledging the previous step.
