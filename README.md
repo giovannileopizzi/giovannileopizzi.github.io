@@ -1,54 +1,59 @@
 <header>
 
 <!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
+  <<< Giovanni's personal site header >>>
+  Include una bio sintetica, un'immagine 1280×640 se desiderato, e link utili (CV, progetti, contatti).
+  In Settings del repo: abilita GitHub Pages, aggiungi social image, imposta MIT license.
 -->
 
-# GitHub Pages
+# Giovanni Leopizzi
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+_Economics & Finance graduate | Research-driven | Quant-oriented._
 
 </header>
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
+## Step 1: About me
 
-## Step 1: Enable GitHub Pages
+_Ciao! Sono Giovanni Leopizzi, appassionato di ricerca in macro-finanza, ESG e asset pricing._
 
-_Welcome to GitHub Pages and Jekyll :tada:!_
+Attualmente sto lavorando su progetti accademici che integrano dati finanziari e modelli quantitativi per analizzare il comportamento degli investitori, i rischi geopolitici e la sostenibilità.  
+Ho esperienza con **Python**, **R**, **Matlab**, ed utilizzo regolarmente dataset complessi come **Refinitiv** e **Bloomberg**.
 
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
+📄 [Scarica il mio CV](./cv.pdf)  
+📬 Contattami: [giovanni@email.com](mailto:giovanni@email.com)
 
-### :keyboard: Activity: Enable GitHub Pages
+---
 
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages** in the **Code and automation** section.
-1. Ensure "Deploy from a branch" is selected from the **Source** drop-down menu, and then select `main` from the **Branch** drop-down menu.
-1. Click the **Save** button.
-1. Wait about _one minute_ then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
-   > **Note**: In the **Pages** of **Settings**, the **Visit site** button will appear at the top. Click the button to see your GitHub Pages site.
+## Step 2: Projects
+
+_Ecco alcuni dei miei progetti recenti._
+
+- 🧠 **Sentiment e mercati finanziari** – Analisi con Bloomberg e regressioni su EMRP e GPR.
+- ♻️ **Investimenti ESG** – Tesi sulla frontiera efficiente ESG, replicando *Pastor-Stambaugh*.
+- 🧮 **Stima bayesiana dello SDF** – Implementazione rolling su mercati europei.
+
+➡️ Altri progetti sono disponibili nel mio [GitHub](https://github.com/giovannileopizzi).
+
+---
+
+## Step 3: Get in touch
+
+_Grazie per aver visitato il mio sito!_
+
+Puoi scrivermi per collaborazioni, opportunità di ricerca o semplicemente per connetterci.
+
+- 📨 Email: [giovanni@email.com](mailto:giovanni@email.com)  
+- 🔗 LinkedIn: [linkedin.com/in/giovannileopizzi](https://linkedin.com/in/giovannileopizzi)
 
 <footer>
 
 <!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
+  <<< Footer >>>
+  Collegamenti utili: status GitHub, codice di condotta, licenza.
 -->
 
 ---
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+&copy; 2025 Giovanni Leopizzi &bull; [MIT License](https://gh.io/mit) &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md)
 
 </footer>
