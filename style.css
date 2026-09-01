@@ -1,0 +1,222 @@
+:root {
+  --background: #f7f8fa;
+  --foreground: #14213d;
+  --muted: #637083;
+  --line: #d9dee7;
+  --accent: #1f4f82;
+  --accent-soft: #dce8f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    linear-gradient(90deg, var(--accent) 0 0.35rem, transparent 0.35rem),
+    var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.site-shell {
+  width: min(72rem, calc(100% - 3rem));
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+.site-header {
+  min-height: 6.5rem;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.site-name {
+  color: var(--foreground);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.site-header nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.site-header nav a {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-header nav a:hover,
+.site-header nav a:focus-visible {
+  color: var(--accent);
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(17rem, 0.8fr);
+  gap: clamp(3rem, 8vw, 7.5rem);
+  align-items: start;
+  padding-top: clamp(4rem, 8vw, 7.5rem);
+}
+
+.eyebrow {
+  margin: 0 0 1.25rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.home-copy h1,
+.empty-page h1 {
+  margin: 0;
+  color: var(--foreground);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.25rem, 7vw, 5.75rem);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.95;
+}
+
+.intro {
+  margin: 2.25rem 0 2.5rem;
+  border-left: 3px solid var(--accent);
+  padding-left: 1.25rem;
+  color: var(--foreground);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.3rem, 2.4vw, 1.75rem);
+  line-height: 1.45;
+}
+
+.bio {
+  max-width: 42rem;
+  color: #354258;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.bio p {
+  margin: 0 0 1.35rem;
+}
+
+.bio a {
+  color: var(--accent);
+  text-decoration-color: #8eaccb;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.bio a:hover,
+.bio a:focus-visible {
+  text-decoration-color: var(--accent);
+}
+
+.home-copy h2 {
+  margin: 3rem 0 0;
+  color: var(--foreground);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
+  font-weight: 400;
+}
+
+.portrait-column {
+  position: sticky;
+  top: 2rem;
+}
+
+.portrait-frame {
+  position: relative;
+  display: flex;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 0.45rem solid var(--accent);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.25), transparent 45%),
+    var(--accent-soft);
+  color: var(--accent);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(4rem, 8vw, 7rem);
+  letter-spacing: -0.08em;
+  user-select: none;
+}
+
+.portrait-frame img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.empty-page {
+  min-height: calc(100vh - 11.5rem);
+  padding-top: clamp(4rem, 8vw, 7.5rem);
+}
+
+.empty-page h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+}
+
+@media (max-width: 760px) {
+  body {
+    background:
+      linear-gradient(90deg, var(--accent) 0 0.22rem, transparent 0.22rem),
+      var(--background);
+  }
+
+  .site-shell {
+    width: min(100% - 2.25rem, 42rem);
+  }
+
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.1rem;
+    justify-content: center;
+    padding: 1.5rem 0;
+  }
+
+  .site-header nav {
+    gap: 1.15rem;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+    padding-top: 3.5rem;
+  }
+
+  .portrait-column {
+    grid-row: 1;
+    max-width: 17rem;
+    position: static;
+  }
+
+  .home-copy h1 {
+    font-size: clamp(3rem, 15vw, 4.25rem);
+  }
+}
